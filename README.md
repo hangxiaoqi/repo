@@ -1,2 +1,2 @@
 # repo
-假专业
+do more, do better!
