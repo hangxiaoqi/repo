@@ -14,7 +14,7 @@ export total_line=`wc -l access.log | cut -f1 -d " "` && export not_found_line=`
 { 
 	if (map[$4] > 0 ){
 		map[$4]=map$[4] +  $2 
-		map_time[$4】 = map_time[$4] + 1
+		map_time[$4] = map_time[$4] + 1
 	}
 	else{
 		map[$4]=$2
@@ -83,7 +83,7 @@ load值越大也就意味着系统越繁忙，这样线程运行完以后等待�
 
 2. cpu的利用率
 top | grep Cpu
-	1> 其中， CPU	后面跟的各个列是各种状态下的cpu的时间占比
+	1> 其中， CPU 后面跟的各个列是各种状态下的cpu的时间占比
 		用户时间（User Time) 即 us 所对应的列，标识cpu执行用户进程所占用的时间
 		系统时间（system Time) 即 sy所对应的列， 标识cpu在内核态所花费的时间。
 		Nice时间（Nice Time) 即 ni所对应的列， 标识系统在调整进程优先级所花费的时间。
