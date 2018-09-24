@@ -103,7 +103,7 @@ sar -n DEV 1 1 ： -n表示汇报网络状况 ，DEV表示查看各网卡的流�
 展示的结果中， rxpck/s 表示每秒接收的数据包，txpck/s  表示每一秒发出的数据包，rxKB/s 每一秒接收到的字节数，txKB/s 表示的是每一秒发出的字节数，rxcmp/s 表示每一秒接收到的压缩包数， txcmp/s 表示每一秒发出的压缩包数，rxmcst/s 表示接收的广播， Average 表示多次取样的平均值
 
 5. 磁盘I/O
-ipstat -d -k
+iostat -d -k
 
 6. 内存使用
 free -m
